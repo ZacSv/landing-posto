@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Inter:wght@400;700&family=Ubuntu:wght@400;500&display=swap");
+:root {
+  --degrade-padrao: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 42%,
+    rgba(60, 59, 59, 1) 85%
+  );
+  --fonte-padrao: "Ubuntu", sans-serif;
+  --cor-fontePadrao: white;
+}
+
+.logo-nav {
+  max-height: 6.2rem;
+  max-width: 12.4rem;
+}
+
+.icon {
+  text-decoration: none;
+  color: var(--cor-fontePadrao);
+}
+
+.icon:hover {
+  border-bottom: 2px solid var(--cor-fontePadrao);
+}
+
+.nav-menu {
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-image: var(--degrade-padrao);
+  height: 10rem;
+  font-family: var(--fonte-padrao);
+}
+
+.container-nav {
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+.banner-header {
+  display: flex;
+  justify-content: space-between;
+  background-image: var(--degrade-padrao);
+}
+
+.pattern-header {
+  max-width: 60%;
+  max-height: 40%;
+}
+
+.primeiro-conteudo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 10%;
+  justify-content: space-between;
+}
+
+.principalText-banner {
+  font-size: 3.5rem;
+  color: var(--cor-fontePadrao);
+}
+
+.mouse-down {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 65%;
+  justify-content: center;
+  font-family: var(--cor-fontePadrao);
+  color: var(--cor-fontePadrao);
+  font-size: 1.2rem;
+}
+
+.icon-mouse {
+  max-width: 40px;
+}
+
+.icon-flecha {
+  animation-name: arrow;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+/* Animation */
+@keyframes arrow {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}
