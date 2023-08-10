@@ -9,6 +9,9 @@
   --fonte-padrao: "Ubuntu", sans-serif;
   --cor-fontePadrao: white;
 }
+a {
+  text-decoration: none;
+}
 
 .logo-nav {
   max-height: 6.2rem;
@@ -75,6 +78,7 @@
   font-family: var(--cor-fontePadrao);
   color: var(--cor-fontePadrao);
   font-size: 1.2rem;
+  gap: 0.5rem;
 }
 
 .icon-mouse {
@@ -86,6 +90,231 @@
   animation-duration: 1s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
+}
+
+main {
+  flex-direction: column;
+  text-align: center;
+}
+
+.titulo-segundoConteudo {
+  font-family: var(--fonte-padrao);
+  font-weight: bold;
+  font-size: 2.6rem;
+  margin-top: 2rem;
+}
+
+.cards {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+.desc-card {
+  font-family: var(--fonte-padrao);
+  width: 60%;
+  font-size: 1.2rem;
+}
+
+#icon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo-terceiroConteudo {
+  font-family: var(--fonte-padrao);
+  font-weight: bold;
+  font-size: 2.6rem;
+  margin: 4rem 0;
+}
+
+.carousel__content--wrapper {
+  display: none;
+}
+.carousel:has(input#radio0:checked) .carousel__content--wrapper:nth-child(1) {
+  display: contents;
+}
+.carousel:has(input#radio1:checked) .carousel__content--wrapper:nth-child(2) {
+  display: contents;
+}
+.carousel:has(input#radio2:checked) .carousel__content--wrapper:nth-child(3) {
+  display: contents;
+}
+
+.carousel__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.carousel__nav {
+  padding: 20px;
+  width: 2%;
+  line-height: 1;
+  border-radius: 50%;
+  border: 1px solid;
+  box-shadow: 0.1rem 0.1rem 0 0.1rem;
+  user-select: none;
+  transition: all 40ms;
+}
+
+.carousel__nav:hover {
+  background-color: gray;
+}
+.carousel__nav:active {
+  background: color-mix(in hsl, #bde0fe, #000 20%);
+  box-shadow: inset 0.1rem 0.1rem 0 rgba(0, 0, 0, 0.24);
+  transform: translate(0.2rem, 0.2rem);
+}
+
+.vai-e-vem {
+  margin-top: 2rem;
+  width: 100vw;
+}
+
+.carousel--img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 85vw;
+}
+/* .carousel--img img {
+  display: block;
+  width: 20%;
+  height: 20%;
+} */
+
+.titulo-conteudo {
+  font-family: var(--fonte-padrao);
+  font-size: 3rem;
+  font-weight: bold;
+}
+.estilo-conteudo {
+  flex-direction: column;
+  width: 30%;
+}
+
+.conteudo {
+  font-family: var(--fonte-padrao);
+  font-size: 2rem;
+}
+
+.img-app {
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px black;
+  width: 20%;
+  height: 20%;
+}
+
+.carousel__pagination {
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+}
+.carousel__pagination input {
+  appearance: none;
+  display: none;
+  width: 1rem;
+  height: 1rem;
+  background: #fff;
+  border: 2px solid #b388eb;
+  border-radius: 100%;
+  box-shadow: 0.1rem 0.1rem 0;
+}
+.carousel__pagination input:checked {
+  background: #b388eb;
+  border-color: color-mix(in hsl, #b388eb, #000 20%);
+}
+
+.parceiros {
+  margin-top: 4rem;
+}
+
+.titulo-parceiros {
+  font-family: var(--fonte-padrao);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.grid-parceiros {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 7rem;
+}
+
+.img-parceiros {
+  max-width: 500px;
+  max-height: 280px;
+  border-bottom: 5px solid black;
+}
+
+.titulo-cardParceiros {
+  margin-top: 1rem;
+  font: var(--fonte-padrao);
+  font-size: 3rem;
+  color: black;
+  font-weight: bold;
+}
+.texto-parceiros {
+  font: var(--fonte-padrao);
+  font-size: 2rem;
+  color: black;
+  width: 50vh;
+}
+
+.imagens-card {
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+  box-shadow: 1px 1px 10px black;
+  margin-bottom: 2rem;
+}
+
+.rodape {
+  background-image: var(--degrade-padrao);
+  height: 30vh;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 7rem;
+  align-items: center;
+  border-bottom: 2px solid gray;
+}
+
+.logo-rodape {
+  max-width: 100px;
+}
+
+.links-rodape {
+  display: flex;
+  gap: 3rem;
+  margin: 2rem 7rem;
+}
+
+.nav-rodape {
+  font: var(--fonte-padrao);
+  color: var(--cor-fontePadrao);
+  font-size: 1.5rem;
+}
+
+.footer {
+  background-color: rgb(40, 40, 40);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.endereco-footer {
+  color: var(--cor-fontePadrao);
+  font-size: 1rem;
 }
 
 /* Animation */
