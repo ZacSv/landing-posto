@@ -6,6 +6,7 @@
     <title>My Car</title>
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./assets/fuel.ico" type="image/x-icon">
   </head>
   <body>
     <header>
@@ -34,13 +35,12 @@
               alt=""
             />
             <p class="text-mouse-down">
-              <strong>Role para baixo</strong>
-              para descobrir mais
+              Role para descobrir mais
             </p>
           </div>
         </div>
 
-        <img class="pattern-header" src="./assets/pattern.png" alt="" />
+        <img class="pattern-header" src="./assets/pattern.png" alt="pattern" />
       </section>
       
         <h1 class="titulo-segundoConteudo">pro seu carro...</h1>
@@ -67,10 +67,10 @@
             <div class="carousel__content">
               <div class="vai-e-vem">
                 <label class="carousel__nav carousel__nav--prev" for="radio2"
-                  ><</label
+                  ><img src="./assets/seta-vem.png" alt="seta-left"></label
                 >
                 <label class="carousel__nav carousel__nav--next" for="radio1"
-                  >></label
+                  ><img src="./assets/seta-vai.png" alt="seta-right"></label
                 >
               </div>
               <figure class="carousel--img">
@@ -88,10 +88,10 @@
             <div class="carousel__content">
               <div class="vai-e-vem">
                 <label class="carousel__nav carousel__nav--prev" for="radio0"
-                  ><</label
+                  ><img src="./assets/seta-vem.png" alt="seta-left"></label
                 >
                 <label class="carousel__nav carousel__nav--next" for="radio2"
-                  >></label
+                  ><img src="./assets/seta-vai.png" alt="seta-right"></label
                 >
               </div>
               <figure class="carousel--img">
@@ -110,10 +110,10 @@
             <div class="carousel__content">
               <div class="vai-e-vem">
                 <label class="carousel__nav carousel__nav--prev" for="radio1"
-                  ><</label
+                  ><img src="./assets/seta-vem.png" alt="seta-left"></label
                 >
                 <label class="carousel__nav carousel__nav--next" for="radio0"
-                  >></label
+                  ><img src="./assets/seta-vai.png" alt="seta-right"></label
                 >
               </div>
               <figure class="carousel--img">
@@ -142,24 +142,31 @@
         <section class="parceiros">
           <h1 class="titulo-parceiros">... e em diversos parceiros</h1>
           <div class="grid-parceiros">          
-            <a target="_blank" class="imagens-card" href="https://www.voeazul.com.br/cadastro-rapido?utm_source=google&utm_medium=cpl&utm_campaign=ta_google_aon-fidelidade-marca_abril_conversao_search_cadastros_bra_null_kw_cpl_lp_lower_texto_search_fidelidade-generico&s_kwcid=buscapaga_ta_google_aon-fidelidade-marca_abril_conversao_search_cadastros_bra_null_kw_cpl_lp_lower_texto_search_fidelidade-generico&gclid=Cj0KCQjwldKmBhCCARIsAP-0rfxVI9IQMwbLHSQwLPOYYIfiVZmYgeHsMnAEt2lRaiusnJ1nXZ4b_5MaAt-FEALw_wcB">
+            <a id="primeiro-parceiro" target="_blank" class="imagens-card" href="https://www.voeazul.com.br/cadastro-rapido?utm_source=google&utm_medium=cpl&utm_campaign=ta_google_aon-fidelidade-marca_abril_conversao_search_cadastros_bra_null_kw_cpl_lp_lower_texto_search_fidelidade-generico&s_kwcid=buscapaga_ta_google_aon-fidelidade-marca_abril_conversao_search_cadastros_bra_null_kw_cpl_lp_lower_texto_search_fidelidade-generico&gclid=Cj0KCQjwldKmBhCCARIsAP-0rfxVI9IQMwbLHSQwLPOYYIfiVZmYgeHsMnAEt2lRaiusnJ1nXZ4b_5MaAt-FEALw_wcB">
               <img
               class="img-parceiros"
               src="./assets/parceiros/Tudo-azul.png"
               alt="img-tudo-azul  "
             />
-              <h1 class="titulo-cardParceiros">Tudo Azul</h1>
-              <p class="texto-parceiros">Troque seus km por pontos TudoAzul com descontos</p>
+            <div class="conteudo-parceiros"> 
+              <img src="./assets/parceiros/logoTudoAzul.png" alt="logo-tudo-azul">
+              <p class="texto-parceiros">Troque seus km por pontos TudoAzul com descontos !</p>
+            </div>
+             
 
             </a>
-            <a target="_blank" class="imagens-card" href="https://www.netshoes.com.br/">
+            <a id="segundo-parceiro" target="_blank" class="imagens-card" href="https://www.voeazul.com.br/cadastro-rapido?utm_source=google&utm_medium=cpl&utm_campaign=ta_google_aon-fidelidade-marca_abril_conversao_search_cadastros_bra_null_kw_cpl_lp_lower_texto_search_fidelidade-generico&s_kwcid=buscapaga_ta_google_aon-fidelidade-marca_abril_conversao_search_cadastros_bra_null_kw_cpl_lp_lower_texto_search_fidelidade-generico&gclid=Cj0KCQjwldKmBhCCARIsAP-0rfxVI9IQMwbLHSQwLPOYYIfiVZmYgeHsMnAEt2lRaiusnJ1nXZ4b_5MaAt-FEALw_wcB">
               <img
               class="img-parceiros"
               src="./assets/parceiros/netshoes.png"
               alt="img-tudo-azul  "
             />
-            <h1 class="titulo-cardParceiros">Netshoes</h1>
-              <p class="texto-parceiros">Comprar aquele tênis novo de corrida</p>
+            <div class="conteudo-parceiros"> 
+              <img src="./assets/parceiros/logoNetshoes.png" alt="logo-tudo-azul">
+              <p class="texto-parceiros">Receba desconto em artigos esportivos para comprar aquele tênis novo !</p>
+            </div>
+             
+
             </a>
 
         </section>

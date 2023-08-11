@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Inter:wght@400;700&family=Ubuntu:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Inter:wght@400;700&family=Ubuntu:wght@400;500&display=swap");
 :root {
   --degrade-padrao: linear-gradient(
     90deg,
@@ -7,7 +8,10 @@
     rgba(60, 59, 59, 1) 85%
   );
   --fonte-padrao: "Ubuntu", sans-serif;
+  --fonte-apoio: "Bacasime Antique", serif;
   --cor-fontePadrao: white;
+  --degrade-primeiroParceiro: linear-gradient(90deg, #b6cafa, #6481cc);
+  --degrade-segundoParceiro: linear-gradient(90deg, #a95cdc, #662886);
 }
 a {
   text-decoration: none;
@@ -21,6 +25,7 @@ a {
 .icon {
   text-decoration: none;
   color: var(--cor-fontePadrao);
+  padding: 10px;
 }
 
 .icon:hover {
@@ -148,12 +153,13 @@ main {
   align-items: center;
 }
 .carousel__nav {
-  padding: 20px;
-  width: 2%;
+  display: flex;
+  justify-content: center;
+
   line-height: 1;
   border-radius: 50%;
   border: 1px solid;
-  box-shadow: 0.1rem 0.1rem 0 0.1rem;
+
   user-select: none;
   transition: all 40ms;
 }
@@ -169,7 +175,10 @@ main {
 
 .vai-e-vem {
   margin-top: 2rem;
-  width: 100vw;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .carousel--img {
@@ -204,7 +213,7 @@ main {
   border-radius: 20px;
   box-shadow: 1px 1px 10px black;
   width: 20%;
-  height: 20%;
+  height: 25%;
 }
 
 .carousel__pagination {
@@ -245,32 +254,46 @@ main {
 }
 
 .img-parceiros {
+  border-radius: 19px;
   max-width: 500px;
-  max-height: 280px;
-  border-bottom: 5px solid black;
+  max-height: 300px;
+  border-bottom: 3px solid black;
 }
 
-.titulo-cardParceiros {
-  margin-top: 1rem;
-  font: var(--fonte-padrao);
-  font-size: 3rem;
-  color: black;
-  font-weight: bold;
+#primeiro-parceiro {
+  background-image: var(--degrade-primeiroParceiro);
 }
+#segundo-parceiro {
+  background-image: var(--degrade-segundoParceiro);
+}
+
+.conteudo-parceiros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
 .texto-parceiros {
-  font: var(--fonte-padrao);
+  font-family: var(--fonte-apoio);
+  font-weight: bold;
   font-size: 2rem;
   color: black;
-  width: 50vh;
+  width: 40vh;
 }
 
 .imagens-card {
+  border-radius: 20px;
   border: 2px solid black;
+  width: 34%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  height: 70vh;
+  height: 75vh;
   box-shadow: 1px 1px 10px black;
   margin-bottom: 2rem;
 }
@@ -297,11 +320,13 @@ main {
   gap: 3rem;
   margin: 2rem 7rem;
 }
-
 .nav-rodape {
   font: var(--fonte-padrao);
   color: var(--cor-fontePadrao);
   font-size: 1.5rem;
+}
+.nav-rodape:hover {
+  border-bottom: 2px solid var(--cor-fontePadrao);
 }
 
 .footer {
