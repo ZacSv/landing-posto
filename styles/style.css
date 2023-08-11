@@ -288,7 +288,7 @@ main {
 .imagens-card {
   border-radius: 20px;
   border: 2px solid black;
-  width: 34%;
+  width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
