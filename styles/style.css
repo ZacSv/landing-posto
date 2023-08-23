@@ -25,10 +25,9 @@ a {
 .icon {
   text-decoration: none;
   color: var(--cor-fontePadrao);
-  padding: 10px;
 }
 
-.icon:hover {
+.container-nav > a:hover {
   border-bottom: 2px solid var(--cor-fontePadrao);
 }
 
@@ -188,11 +187,6 @@ main {
   gap: 3rem;
   width: 85vw;
 }
-/* .carousel--img img {
-  display: block;
-  width: 20%;
-  height: 20%;
-} */
 
 .titulo-conteudo {
   font-family: var(--fonte-padrao);
